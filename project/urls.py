@@ -4,6 +4,13 @@ from django.contrib import admin
 
 from welcome.views import index, health
 
+from rest_framework.routers import DefaultRouter
+
+from todo_app.todo.views import TaskViewSet
+
+router = DefaultRouter()
+router.register(r"todo", TaskViewSet)
+
 urlpatterns = [
     # Examples:
     # url(r'^$', 'project.views.home', name='home'),
@@ -12,6 +19,7 @@ urlpatterns = [
     url(r'^$', index),
     url(r'^health$', health),
     url(r'^admin/', include(admin.site.urls)),
+    url(r"^api/", include((router.urls, "todo"))),
 ]
 
 if settings.DEBUG:
