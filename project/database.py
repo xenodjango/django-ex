@@ -27,8 +27,8 @@ def config():
     return {
         'ENGINE':'django.db.backends.postgresql_psycopg2',#engine,
         'NAME': 'default',#name,
-        'USER': os.getenv('DATABASE_USER'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
+        'USER': 'django',
+        'PASSWORD': 'W1bNRmqkp8mtHEDu',
         'HOST': '172.30.58.116', #os.getenv('{}_SERVICE_HOST'.format(service_name)),
         'PORT': '5432',#os.getenv('{}_SERVICE_PORT'.format(service_name)),
     }
