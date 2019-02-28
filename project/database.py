@@ -23,6 +23,7 @@ def config():
     engine = engines['postgresql']
     print('DATABASE_USER:', os.getenv('DATABASE_USER'))
     print('DATABASE_PASSWORD:', os.getenv('DATABASE_PASSWORD'))
+    print('DJANGO_SECRET_KEY:', os.getenv('DJANGO_SECRET_KEY'))
     return {
         'ENGINE':'django.db.backends.postgresql_psycopg2',#engine,
         'NAME': 'default',#name,

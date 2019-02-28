@@ -24,7 +24,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv(
     'DJANGO_SECRET_KEY',
     # safe value used for development when DJANGO_SECRET_KEY might not be set
-    '9e4@&tw46$l31)zrqe3wi+-slqm(ruvz&se0^%9#6(_w3ui!c0'
+    #'9e4@&tw46$l31)zrqe3wi+-slqm(ruvz&se0^%9#6(_w3ui!c0'
+    'dgiMU_Kz5Nhq1Gxj9PrYV0Ju62fRnErrzz7wg2qKFea7UZ3JNa'
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
