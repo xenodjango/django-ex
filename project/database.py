@@ -25,8 +25,8 @@ def config():
     return {
         'ENGINE': engine,
         'NAME': name,
-        'USER': os.getenv('DATABASE_USER'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
-        'HOST': os.getenv('{}_SERVICE_HOST'.format(service_name)),
-        'PORT': os.getenv('{}_SERVICE_PORT'.format(service_name)),
+        'USER': 'django', #os.getenv('DATABASE_USER'),
+        'PASSWORD': 'W1bNRmqkp8mtHEDu', #os.getenv('DATABASE_PASSWORD'),
+        'HOST': '172.30.58.116', #os.getenv('{}_SERVICE_HOST'.format(service_name)),
+        'PORT': '5432',#os.getenv('{}_SERVICE_PORT'.format(service_name)),
     }
